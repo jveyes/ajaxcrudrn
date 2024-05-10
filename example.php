@@ -38,6 +38,12 @@
     #http://ajaxcrud.com/api/index.php?id=setTextareaHeight
     $tblDemo->setTextareaHeight('comment_content', 150);
 
+    $tblDemo->addAjaxFilterBox('comment_post_ID', 15);
+    $tblDemo->addAjaxFilterBox('comment_author', 15);
+    $tblDemo->addAjaxFilterBox('comment_author_email', 15);
+    $tblDemo->addAjaxFilterBox('comment_date', 15);
+    $tblDemo->addAjaxFilterBox('comment_content', 15);
+
     #i could omit a field if I wanted
     #http://ajaxcrud.com/api/index.php?id=omitField
     //$tblDemo->omitField("fldField2");
@@ -87,7 +93,7 @@
     //$tblDemo->addAjaxFilterBox('fldField1');
 
     #if really desired, a filter box can be used for all fields
-    $tblDemo->addAjaxFilterBoxAllFields();
+    #$tblDemo->addAjaxFilterBoxAllFields();
 
     #i can set the size of the filter box
     //$tblDemo->setAjaxFilterBoxSize('fldField1', 3);
@@ -104,30 +110,6 @@
 
 	$tblDemo->deleteText = "ELIMINAR";
 
-?>
-		<div style="float: left">
-			Total Returned Rows: <b><?=$tblDemo->insertRowsReturned();?></b><br />
-		</div>
-
-		<div style="clear:both;"></div>
-
-<?php
-
 	#actually show the table
 	$tblDemo->showTable();
-
-	#my self-defined functions used for formatFieldWithFunction
-	function makeBold($val){
-		if ($val == "") return "no value";
-		return "<b>$val</b>";
-	}
-
-	function makeBlue($val){
-		return "<span style='color: blue;'>$val</span>";
-	}
-
-	function myCallBackFunction($array){
-		echo "THE ADD ROW CALLBACK FUNCTION WAS implemented";
-		print_r($array);
-	}
 ?>

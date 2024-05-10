@@ -3,7 +3,7 @@
 	require_once('preheader.php'); // <-- this include file MUST go first before any HTML/output
 
 	#the code for the class
-	include ('../ajaxCRUD.class.php'); // <-- this include file MUST go first before any HTML/output
+	include ('ajaxCRUD.class.php'); // <-- this include file MUST go first before any HTML/output
 
     #this one line of code is how you implement the class
     ########################################################

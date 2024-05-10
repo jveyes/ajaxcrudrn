@@ -1,6 +1,6 @@
 <?php
 
-	require_once('../preheader.php'); // <-- this include file MUST go first before any HTML/output
+	require_once('preheader.php'); // <-- this include file MUST go first before any HTML/output
 
 	#the code for the class
 	include ('../ajaxCRUD.class.php'); // <-- this include file MUST go first before any HTML/output

@@ -5,7 +5,7 @@
 	#this is the info for your database connection
     ####################################################################################
     ##
-	$MYSQL_HOST  = "15.235.85.158";
+	$MYSQL_HOST  = "localhost";
 	$MYSQL_LOGIN = "rematesnacionale_5";
 	$MYSQL_PASS  = ".0dp--9PRs9O6S(]";
 	$MYSQL_DB    = "rematesnacionale_5";

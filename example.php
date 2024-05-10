@@ -45,6 +45,12 @@
     $tblDemo->addAjaxFilterBox('comment_date');
     $tblDemo->addAjaxFilterBox('comment_content');
 
+    $tblDemo->displayAs("comment_post_ID", "POST ID");
+    $tblDemo->displayAs("comment_author", "AUTOR");
+    $tblDemo->displayAs("comment_author_email", "EMAIL");
+    $tblDemo->displayAs("comment_date", "FECHA");
+    $tblDemo->displayAs("comment_content", "COMENTARIO");
+
     #i could omit a field if I wanted
     #http://ajaxcrud.com/api/index.php?id=omitField
     //$tblDemo->omitField("fldField2");

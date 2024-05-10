@@ -1,0 +1,52 @@
+<style type="text/css">
+table.sample {
+	border-width: 3px;
+	border-spacing: 3px;
+	border-style: dotted;
+	border-color: blue;
+	border-collapse: separate;
+	background-color: white;
+}
+table.sample th {
+	border-width: 3px;
+	padding: 3px;
+	border-style: dotted;
+	border-color: green;
+	background-color: rgb(255, 245, 238);
+	-moz-border-radius: 9px 9px 9px 9px;
+}
+table.sample td {
+	border-width: 3px;
+	padding: 3px;
+	border-style: dotted;
+	border-top: 10px solid blue;
+	border-color: green;
+	background-color: rgb(255, 245, 238);
+	-moz-border-radius: 9px 9px 9px 9px;
+}
+
+table.sample1 {
+	border-width: 3px;
+	border-spacing: 3px;
+	border-style: dotted;
+	border-color: blue;
+	border-collapse: separate;
+	background-color: white;
+}
+table.sample1 th {
+	border-width: 3px;
+	padding: 3px;
+	border-style: dotted;
+	border-color: red;
+	background-color: rgb(255, 245, 238);
+	-moz-border-radius: 9px 9px 9px 9px;
+}
+table.sample1 td {
+	border-width: 3px;
+	padding: 3px;
+	border-style: dotted;
+	border-color: red;
+	background-color: rgb(255, 245, 238);
+	-moz-border-radius: 9px 9px 9px 9px;
+}
+</style>

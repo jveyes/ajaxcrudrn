@@ -1,0 +1,36 @@
+<style>
+#container {	margin: 0 30px;	background: #fff;}
+#header { background: #ccc;	padding: 20px; width: 800;}
+#header h1 { margin: 0; }
+#navigation {	float: left;	width: 100%;	background: #333;}
+#navigation ul{	margin: 0;	padding: 0;}
+#navigation ul li{	list-style-type: none;	display: inline;}
+#navigation li a{	display: block;	float: left;	padding: 5px 10px;	color: #fff;	text-decoration: none;	border-right: 1px solid #fff;}
+#navigation li a:hover { background: #383; }
+#content{	clear: left;	padding: 20px;}
+#content h2{	color: #000;	font-size: 160%;	margin: 0 0 .5em;}
+#footer{	background: #ccc;	text-align: right;	padding: 20px;	height: 1%;}
+.submit { margin-left: 5em; }
+
+
+body { font-size: 75%; }
+label { display: inline-block; width: 100px; }
+legend { padding: 0.5em; }
+fieldset fieldset label { display: block; }
+#commentForm { width: 500px; }
+#commentForm label { width: 250px; }
+#commentForm label.error, #commentForm button.submit { margin-left: 253px; }
+#signupForm { width: 670px; }
+#signupForm label.error {
+	margin-left: 10px;
+	width: auto;
+	display: inline;
+}
+#newsletter_topics label.error {
+	display: none;
+	margin-left: 103px;
+}
+
+
+
+</style>

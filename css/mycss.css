@@ -8,7 +8,7 @@
 	cursor: hand; /* for IE 5.x */
 }
 
-.paging_links{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:14px; color:#173D7F;}
+.paging_links{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#F5E000;}
 
 .ajaxCRUD {
 	background: #F4F2FD;
@@ -25,7 +25,7 @@
 	background: #CFDBF3;
 	font-weight: bold;
 	color:#445276;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 .ajaxCRUD th a{
@@ -42,7 +42,7 @@
 
 .ajaxCRUD td{
 	font-family: Arial, Verdana;
-	font-size: 11px;
+	font-size: 12px;
 	background: #F9F8FB;
 	color: #716E6E;
 	font-weight:normal;
@@ -53,12 +53,13 @@
 .ajaxCRUD td, .ajaxCRUD th{
 	padding: 5px 5px;
 }
-table td.odd, table tr.odd, tr.odd td, tbody tr.odd th{
+table td.odd, table tr.odd, tr.odd td, tbody tr.odd th,a{
 	background-color: #f2f2f2;
 }
 
 .editingSize{
-	font-size: 10px;
+	font-size: 12px;
+	font-family: Arial, Verdana;
 }
 
 .vertical, .vertical td, .vertical th{
@@ -100,7 +101,6 @@ input, select, textarea{
 }
 
 .error {
-	vertical-align: middle;
 	text-align: left;
 	font-weight: bold;
 	border-top: 1px solid #FFFF00;

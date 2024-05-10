@@ -9,8 +9,9 @@
     ########################################################
     ##
 
-    $tblDemo = new ajaxCRUD("Item", "wphg_comments", "pkID", "../");
-
+    #$tblDemo = new ajaxCRUD("Item", "wphg_comments", "pkID", "../");
+    $tblDemo = new ajaxCRUD("Item", "wphg_comments", "comment_ID", "../");
+    
     ##
     ########################################################
 

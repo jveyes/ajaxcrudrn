@@ -28,15 +28,15 @@
     $tblDemo->omitPrimaryKey();
 
     #the table fields have prefixes; i want to give the heading titles something more meaningful
-    $tblDemo->displayAs("fldField1", "Field1");
-    $tblDemo->displayAs("fldField2", "Field2");
-    $tblDemo->displayAs("fldCertainFields", "Valid Value Field");
-    $tblDemo->displayAs("fldLongField", "Long Field");
-    $tblDemo->displayAs("fldCheckbox", "Is Selected?");
+    $tblDemo->displayAs("comment_post_ID", "POST ID");
+    $tblDemo->displayAs("comment_author", "AUTOR");
+    $tblDemo->displayAs("comment_author_email", "EMAIL");
+    $tblDemo->displayAs("comment_date", "FECHA");
+    $tblDemo->displayAs("comment_content", "COMENTARIO");
 
 	#set the textarea height of the longer field (for editing/adding)
     #http://ajaxcrud.com/api/index.php?id=setTextareaHeight
-    $tblDemo->setTextareaHeight('fldLongField', 150);
+    $tblDemo->setTextareaHeight('comment_content', 150);
 
     #i could omit a field if I wanted
     #http://ajaxcrud.com/api/index.php?id=omitField
@@ -62,11 +62,11 @@
 
     #i can set certain fields to only allow certain values
     #http://ajaxcrud.com/api/index.php?id=defineAllowableValues
-    $allowableValues = array("Allowable Value1", "Allowable Value2", "Dropdown Value", "CRUD");
-    $tblDemo->defineAllowableValues("fldCertainFields", $allowableValues);
+    #$allowableValues = array("Allowable Value1", "Allowable Value2", "Dropdown Value", "CRUD");
+    #$tblDemo->defineAllowableValues("fldCertainFields", $allowableValues);
 
     //set field fldCheckbox to be a checkbox
-    $tblDemo->defineCheckbox("fldCheckbox");
+    #$tblDemo->defineCheckbox("fldCheckbox");
 
     #i can disallow deleting of rows from the table
     #http://ajaxcrud.com/api/index.php?id=disallowDelete
@@ -81,7 +81,7 @@
     //$tblDemo->addButtonToRow("Add", "add_item.php", "all");
 
     #set the number of rows to display (per page)
-    $tblDemo->setLimit(30);
+    $tblDemo->setLimit(5);
 
 	#set a filter box at the top of the table
     //$tblDemo->addAjaxFilterBox('fldField1');
@@ -94,15 +94,15 @@
 
 	#i can format the data in cells however I want with formatFieldWithFunction
 	#this is arguably one of the most important (visual) functions
-	$tblDemo->formatFieldWithFunction('fldField1', 'makeBlue');
-	$tblDemo->formatFieldWithFunction('fldField2', 'makeBold');
+	#$tblDemo->formatFieldWithFunction('fldField1', 'makeBlue');
+	#$tblDemo->formatFieldWithFunction('fldField2', 'makeBold');
 
 	//$tblDemo->modifyFieldWithClass("fldField1", "zip required"); 	//for testing masked input functionality
 	//$tblDemo->modifyFieldWithClass("fldField2", "phone");			//for testing masked input functionality
 
 	//$tblDemo->onAddExecuteCallBackFunction("mycallbackfunction"); //uncomment this to try out an ADD ROW callback function
 
-	$tblDemo->deleteText = "delete";
+	$tblDemo->deleteText = "ELIMINAR";
 
 ?>
 		<div style="float: left">

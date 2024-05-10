@@ -25,7 +25,7 @@
     //$tblDemo->defineRelationship("fkID", "tblDemoRelationship", "pkID", "fldName", "fldSort DESC"); //use your own table - this table (tblDemoRelationship) not included in the installation script
 
     #i don't want to visually show the primary key in the table
-    $tblDemo->omitPrimaryKey();
+    #$tblDemo->omitPrimaryKey();
 
     #the table fields have prefixes; i want to give the heading titles something more meaningful
     $tblDemo->displayAs("comment_post_ID", "POST ID");

@@ -39,11 +39,11 @@
     #http://ajaxcrud.com/api/index.php?id=setTextareaHeight
     #$tblDemo->setTextareaHeight('comment_content', 150);
 
-    $tblDemo->addAjaxFilterBox('comment_post_ID');
-    $tblDemo->addAjaxFilterBox('comment_author');
-    $tblDemo->addAjaxFilterBox('comment_author_email');
-    $tblDemo->addAjaxFilterBox('comment_date');
-    $tblDemo->addAjaxFilterBox('comment_content');
+    #$tblDemo->addAjaxFilterBox('comment_post_ID');
+    #$tblDemo->addAjaxFilterBox('comment_author');
+    #$tblDemo->addAjaxFilterBox('comment_author_email');
+    #$tblDemo->addAjaxFilterBox('comment_date');
+    #$tblDemo->addAjaxFilterBox('comment_content');
 
     #i could omit a field if I wanted
     #http://ajaxcrud.com/api/index.php?id=omitField

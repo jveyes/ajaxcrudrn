@@ -26,14 +26,14 @@
 
     #i don't want to visually show the primary key in the table
     #$tblDemo->omitPrimaryKey();
-    $tblDemo->showOnly("comment_post_ID, comment_author, comment_author_email","comment_date","comment_content");
+    $tblDemo->showOnly("comment_post_ID, comment_author, comment_author_email","comment_date");
 
     #the table fields have prefixes; i want to give the heading titles something more meaningful
     $tblDemo->displayAs("comment_post_ID", "POST ID");
     $tblDemo->displayAs("comment_author", "AUTOR");
     $tblDemo->displayAs("comment_author_email", "EMAIL");
     $tblDemo->displayAs("comment_date", "FECHA");
-    $tblDemo->displayAs("comment_content", "COMENTARIO");
+    #$tblDemo->displayAs("comment_content", "COMENTARIO");
 
 	#set the textarea height of the longer field (for editing/adding)
     #http://ajaxcrud.com/api/index.php?id=setTextareaHeight

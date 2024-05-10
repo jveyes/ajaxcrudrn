@@ -110,7 +110,7 @@
 	//$tblDemo->onAddExecuteCallBackFunction("mycallbackfunction"); //uncomment this to try out an ADD ROW callback function
 
 	$tblDemo->deleteText = "ELIMINAR";
-    $tblDemo->setCSSFile('css/4.css');
+    $tblDemo->setCSSFile('ajaxcrud.css');
 
 	#actually show the table
 	$tblDemo->showTable();

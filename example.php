@@ -26,6 +26,7 @@
 
     #i don't want to visually show the primary key in the table
     #$tblDemo->omitPrimaryKey();
+    $tblDemo->showOnly("comment_post_ID, comment_author, comment_author_email","comment_date","comment_content");
 
     #the table fields have prefixes; i want to give the heading titles something more meaningful
     $tblDemo->displayAs("comment_post_ID", "POST ID");

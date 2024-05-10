@@ -5,10 +5,10 @@
 	#this is the info for your database connection
     ####################################################################################
     ##
-	$MYSQL_HOST  = "localhost";
-	$MYSQL_LOGIN = "USERNAME GOES HERE";
-	$MYSQL_PASS  = "PASSWORD GOES HERE";
-	$MYSQL_DB    = "YOUR DATABASE GOES HERE";
+	$MYSQL_HOST  = "rematesnacionales.datalink.consulting";
+	$MYSQL_LOGIN = "rematesnacionale_5";
+	$MYSQL_PASS  = ".0dp--9PRs9O6S(]";
+	$MYSQL_DB    = "rematesnacionale_5";
 	##
 	$LOCAL_JS    = FALSE; // FALSE for inclusion of remote js files
     ##
